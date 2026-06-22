@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartContacts API Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .endpoint {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .endpoint h3 {
+            margin-top: 0;
+            color: #0066B3;
+        }
+        button {
+            background-color: #0066B3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        button:hover {
+            background-color: #0055A4;
+        }
+        input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .response {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        pre {
+            margin: 0;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .success {
+            color: green;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>SmartContacts API Test</h1>
+    
+    <div class="container">
+        <div class="endpoint">
+            <h3>1. Liste des pays</h3>
+            <button onclick="testCountries()">Charger les pays</button>
+            <div class="response" id="countries-response"></div>
+        </div>
+        
+        <div class="endpoint">
+            <h3>2. Liste des opérateurs</h3>
+            <button onclick="testOperators()">Tous les opérateurs</button>
+            <input type="text" id="country-code" placeholder="Code pays (ex: FR, US, DE)">
+            <button onclick="testOperatorsByCountry()">Opérateurs par pays</button>
+            <div class="response" id="operators-response"></div>
+        </div>
+        
+        <div class="endpoint">
+            <h3>3. Liste des préfixes</h3>
+            <button onclick="testPrefixes()">Tous les préfixes</button>
+            <input type="text" id="prefix-country" placeholder="Code pays (ex: FR, US, DE)">
+            <button onclick="testPrefixesByCountry()">Préfixes par pays</button>
+            <input type="text" id="prefix-operator" placeholder="ID opérateur (ex: att_us)">
+            <button onclick="testPrefixesByOperator()">Préfixes par opérateur</button>
+            <div class="response" id="prefixes-response"></div>
+        </div>
+        
+        <div class="endpoint">
+            <h3>4. Recherche par numéro de téléphone</h3>
+            <input type="text" id="phone-number" placeholder="Numéro de téléphone (ex: +33612345678)">
+            <button onclick="searchPhone()">Rechercher</button>
+            <div class="response" id="search-response"></div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'api.php';
+        
+        async function testCountries() {
+            try {
+                const response = await fetch(`${API_BASE}?endpoint=countries`);
+                const data = await response.json();
+                displayResponse('countries-response', data);
+            } catch (error) {
+                displayError('countries-response', error.message);
+            }
+        }
+        
+        async function testOperators() {
+            try {
+                const response = await fetch(`${API_BASE}?endpoint=operators`);
+                const data = await response.json();
+                displayResponse('operators-response', data);
+            } catch (error) {
+                displayError('operators-response', error.message);
+            }
+        }
+        
+        async function testOperatorsByCountry() {
+            const countryCode = document.getElementById('country-code').value;
+            if (!countryCode) {
+                alert('Veuillez entrer un code pays');
+                return;
+            }
+            try {
+                const response = await fetch(`${API_BASE}?endpoint=operators&country=${countryCode}`);
+                const data = await response.json();
+                displayResponse('operators-response', data);
+            } catch (error) {
+                displayError('operators-response', error.message);
+            }
+        }
+        
+        async function testPrefixes() {
+            try {
+                const response = await fetch(`${API_BASE}?endpoint=prefixes`);
+                const data = await response.json();
+                displayResponse('prefixes-response', data);
+            } catch (error) {
+                displayError('prefixes-response', error.message);
+            }
+        }
+        
+        async function testPrefixesByCountry() {
+            const countryCode = document.getElementById('prefix-country').value;
+            if (!countryCode) {
+                alert('Veuillez entrer un code pays');
+                return;
+            }
+            try {
+                const response = await fetch(`${API_BASE}?endpoint=prefixes&country=${countryCode}`);
+                const data = await response.json();
+                displayResponse('prefixes-response', data);
+            } catch (error) {
+                displayError('prefixes-response', error.message);
+            }
+        }
+        
+        async function testPrefixesByOperator() {
+            const operatorId = document.getElementById('prefix-operator').value;
+            if (!operatorId) {
+                alert('Veuillez entrer un ID opérateur');
+                return;
+            }
+            try {
+                const response = await fetch(`${API_BASE}?endpoint=prefixes&operator=${operatorId}`);
+                const data = await response.json();
+                displayResponse('prefixes-response', data);
+            } catch (error) {
+                displayError('prefixes-response', error.message);
+            }
+        }
+        
+        async function searchPhone() {
+            const phoneNumber = document.getElementById('phone-number').value;
+            if (!phoneNumber) {
+                alert('Veuillez entrer un numéro de téléphone');
+                return;
+            }
+            try {
+                const response = await fetch(`${API_BASE}?endpoint=search&phone=${phoneNumber}`);
+                const data = await response.json();
+                displayResponse('search-response', data);
+            } catch (error) {
+                displayError('search-response', error.message);
+            }
+        }
+        
+        function displayResponse(elementId, data) {
+            const element = document.getElementById(elementId);
+            const className = data.success ? 'success' : 'error';
+            element.innerHTML = `<pre class="${className}">${JSON.stringify(data, null, 2)}</pre>`;
+        }
+        
+        function displayError(elementId, message) {
+            const element = document.getElementById(elementId);
+            element.innerHTML = `<pre class="error">Erreur: ${message}</pre>`;
+        }
+    </script>
+</body>
+</html>
