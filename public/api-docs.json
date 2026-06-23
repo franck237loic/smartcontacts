@@ -1,0 +1,367 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "GlobalPhone Analytics API",
+    "description": "API pour l'analyse de numéros de téléphone et la détection d'opérateurs",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Support",
+      "email": "support@globalphone-analytics.com"
+    }
+  },
+  "servers": [
+    {
+      "url": "http://localhost/smartcontacts/public",
+      "description": "Serveur de développement"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "apiKey": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "X-API-Key",
+        "description": "Clé API pour l'authentification"
+      }
+    },
+    "schemas": {
+      "PhoneAnalysis": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "phone": {
+            "type": "string"
+          },
+          "data": {
+            "type": "object",
+            "properties": {
+              "country_name": {
+                "type": "string"
+              },
+              "operator_name": {
+                "type": "string"
+              },
+              "brand": {
+                "type": "string"
+              },
+              "dialCode": {
+                "type": "string"
+              },
+              "prefix": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "Error": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean"
+          },
+          "error": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "paths": {
+    "/api/phone/analyze": {
+      "get": {
+        "summary": "Analyser un numéro de téléphone",
+        "description": "Analyse un numéro de téléphone pour identifier l'opérateur et le pays",
+        "parameters": [
+          {
+            "name": "phone",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Numéro de téléphone à analyser"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Analyse réussie",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PhoneAnalysis"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Erreur de requête",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/phone/batch": {
+      "post": {
+        "summary": "Analyser plusieurs numéros de téléphone",
+        "description": "Analyse en lot plusieurs numéros de téléphone",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "phones": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Analyse en lot réussie",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    },
+                    "statistics": {
+                      "type": "object"
+                    },
+                    "results": {
+                      "type": "object"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/phone/countries": {
+      "get": {
+        "summary": "Lister tous les pays",
+        "description": "Retourne la liste de tous les pays disponibles",
+        "responses": {
+          "200": {
+            "description": "Liste des pays",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    },
+                    "count": {
+                      "type": "integer"
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/phone/operators": {
+      "get": {
+        "summary": "Lister tous les opérateurs",
+        "description": "Retourne la liste de tous les opérateurs, filtrable par pays",
+        "parameters": [
+          {
+            "name": "country",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Filtrer par pays (optionnel)"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Liste des opérateurs",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    },
+                    "count": {
+                      "type": "integer"
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/phone/prefixes": {
+      "get": {
+        "summary": "Lister tous les préfixes",
+        "description": "Retourne la liste de tous les préfixes, filtrable par pays ou opérateur",
+        "parameters": [
+          {
+            "name": "country",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Filtrer par pays (optionnel)"
+          },
+          {
+            "name": "operator",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Filtrer par opérateur (optionnel)"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Liste des préfixes",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    },
+                    "count": {
+                      "type": "integer"
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/phone/search": {
+      "get": {
+        "summary": "Rechercher des opérateurs",
+        "description": "Recherche des opérateurs par nom",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Terme de recherche"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Résultats de recherche",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    },
+                    "count": {
+                      "type": "integer"
+                    },
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/phone/statistics": {
+      "get": {
+        "summary": "Obtenir les statistiques",
+        "description": "Retourne les statistiques globales de la base de données",
+        "responses": {
+          "200": {
+            "description": "Statistiques",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "success": {
+                      "type": "boolean"
+                    },
+                    "data": {
+                      "type": "object",
+                      "properties": {
+                        "countries": {
+                          "type": "object"
+                        },
+                        "operators": {
+                          "type": "object"
+                        },
+                        "prefixes": {
+                          "type": "object"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

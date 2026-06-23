@@ -1,0 +1,34 @@
+# Vendor
+/vendor/
+
+# Environment
+.env
+.env.local
+.env.production
+
+# Storage
+/storage/cache/*
+!/storage/cache/.gitkeep
+/storage/logs/*
+!/storage/logs/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Composer
+composer.lock
+
+# Database
+*.sql
+*.db
