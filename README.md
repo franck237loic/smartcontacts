@@ -74,6 +74,16 @@ Option 2: Apache (production)
 6. **Accéder à l'application**
 Ouvrez votre navigateur sur `http://localhost:8000`
 
+## 🚀 Déploiement
+
+### Option 1: Render (Recommandé pour production)
+
+Voir [Déploiement sur Render](#déploiement-sur-render) ci-dessous.
+
+### Option 2: Infinity Free (Gratuit)
+
+Pour un déploiement gratuit, voir [INFINITY_FREE_DEPLOYMENT.md](INFINITY_FREE_DEPLOYMENT.md) pour les instructions détaillées.
+
 ## 🚀 Déploiement sur Render
 
 ### Prérequis
