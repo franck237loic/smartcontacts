@@ -1,0 +1,10 @@
+# Root .htaccess for InfinityFree and shared PHP hosting
+RewriteEngine On
+RewriteBase /
+
+# Serve static assets from the public directory
+RewriteRule ^(assets/.*|LOGO/.*|api-docs\.json)$ public/$1 [L]
+
+# Redirect homepage and all other requests to the public entry point
+RewriteRule ^$ public/ [L]
+RewriteRule ^(.*)$ public/index.php?$1 [L,QSA]

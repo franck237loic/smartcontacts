@@ -86,11 +86,13 @@ Infinity Free n'utilise pas les variables d'environnement comme Render. Vous dev
 2. Naviguez vers le dossier `htdocs`
 3. Supprimez le fichier `index2.php` par défaut
 4. Uploader tous les fichiers de votre projet :
-   - Le contenu du dossier `public/` (pas le dossier lui-même)
+   - Le dossier `public/`
    - Le dossier `app/`
    - Le dossier `vendor/`
    - Le dossier `storage/`
    - Le fichier `composer.json` et `composer.lock`
+
+> Important : sur Infinity Free, `htdocs` doit contenir le dossier `public/`, un `index.php` à la racine, et un fichier `.htaccess` racine qui redirige les requêtes vers `public/index.php`.
 
 **Option 2: Via FTP**
 
