@@ -1,0 +1,693 @@
+ANALYSE DES LOGOS D'OPERATEURS
+================================
+
+STATISTIQUES
+Total opérateurs: 1658
+Avec logo: 1610
+Sans logo: 48
+
+OPERATEURS SANS LOGO (48)
+--------------------------------------------------------------------------------
+ID         Nom                                                Marque                         Logo attendu                  
+--------------------------------------------------------------------------------
+affordableislandcommunications_tt Affordable Island Communications                   Affordable Island Communicatio AffordableIslandCommun.png    
+apua_ag    APUA                                               APUA                           APUA.jfif                     
+apua_bb    APUA                                               APUA                           APUA.jfif                     
+apua_bs    APUA                                               APUA                           APUA.jfif                     
+apua_ca    APUA                                               APUA                           APUA.jfif                     
+apua_dm    APUA                                               APUA                           APUA.jfif                     
+apua_do    APUA                                               APUA                           APUA.jfif                     
+apua_gd    APUA                                               APUA                           APUA.jfif                     
+apua_jm    APUA                                               APUA                           APUA.jfif                     
+apua_kn    APUA                                               APUA                           APUA.jfif                     
+apua_lc    APUA                                               APUA                           APUA.jfif                     
+apua_us    APUA                                               APUA                           APUA.jfif                     
+apua_vc    APUA                                               APUA                           APUA.jfif                     
+cw_bs      C&W                                                C&W                            C&W.png                       
+cablewireless_bs Cable & Wireless                                   Cable & Wireless               Cable & Wireless.png          
+cablewireless_us Cable & Wireless                                   Cable & Wireless               Cable & Wireless.png          
+cablewireless_ag Cable Wireless                                     Cable Wireless                 Cable & Wireless.png          
+carrefour_es Carrefour                                          Carrefour                      Carrefour Mobile.jfif         
+compatel_cz Compatel                                           Compatel                       Compatel.jfif                 
+compatel_fi Compatel                                           Compatel                       Compatel.jfif                 
+compatel_gb Compatel                                           Compatel                       Compatel.jfif                 
+compatel_gr Compatel                                           Compatel                       Compatel.jfif                 
+compatel_si Compatel                                           Compatel                       Compatel.jfif                 
+compatelchilelimitada_cl Compatel Chile Limitada                            Compatel Chile Limitada        Compatel.jfif                 
+coriolistelecom_fr Coriolis Telecom                                   Coriolis Telecom               Coriolis.jfif                 
+cyta_gr    Cyta                                               Cyta                           Cytamobile.jfif               
+dauphintelecom_fr Dauphin Telecom                                    Dauphin Telecom                AllDauphinTelecom.jfif        
+ericssonnv_be Ericsson NV                                        Ericsson NV                    Ericsson.png                  
+freetelecom_il Free Telecom                                       Free Telecom                   free.png                      
+lapostetelecom_fr La poste telecom                                   La poste telecom               La Poste Mobile.png           
+lebara_es  Lebara                                             Lebara                         Lebara.png                    
+lebara_nl  Lebara                                             Lebara                         Lebara.png                    
+lebarafrancelimited_fr Lebara France Limited                              Lebara France Limited          Lebara France Ltd.jpg         
+lebaralimited_dk lebara limited                                     lebara limited                 Lebara.png                    
+melitamobile_mt Melita Mobile                                      Melita Mobile                  Melita.jfif                   
+mint_us    Mint Mobile                                        Mint                           Mint Mobile (US).jpg          
+net10_us   Net10 Wireless                                     Net10                          Net10 Wireless (US).png       
+sminn_is   Síminn                                            Síminn                        Siminn.png                    
+telecomliechtenstein_li Telecom Liechtenstein                              Telecom Liechtenstein          Liechtenstein Telecom.png     
+telecomnamibia_na Telecom Namibia                                    Telecom Namibia                telecomnamibia.jfif           
+tismi_ch   Tismi                                              Tismi                          Tismi.png                     
+tismi_fi   Tismi                                              Tismi                          Tismi.png                     
+tismi_gb   Tismi                                              Tismi                          Tismi.png                     
+tismi_is   Tismi                                              Tismi                          Tismi.png                     
+total_us   Total by Verizon                                   Total                          Total par Verizon (US).png    
+tunisietelecom_tn Tunisie Telecom                                    Tunisie Telecom                Tunisie Télécom.jfif        
+xfinity_us Xfinity Mobile                                     Xfinity                        Xfinity Mobile (US).jfif      
+yemenmobile_ye Yemen Mobile                                       Yemen Mobile                   YemenMobile.png               
+
+
+FICHIERS DE LOGOS DISPONIBLES (629)
+--------------------------------------------------------------------------------
+1&1 Mobilfunk.png
+2degrees.png
+3.png
+9mobile.jfif
+A1 TA.png
+A1 Telekom Austria.jfif
+ASTCA.jfif
+AT&T.png
+ATHKL (Amalgamated Telecom Holdings Kiribati Limited).png
+Adie.jfif
+Advance Info Service (AIS).jfif
+Aeris Communications Inc..png
+Affordable Island Communications.png
+Afghan-Wireless.jfif
+Afone.jfif
+Airbus Defence and Space.jfif
+Aircel Digilink India Ltd..jfif
+Airwave.jfif
+Aktel.png
+Al-Madar.jfif
+Alliance.jfif
+Allstream.png
+Alphalink.png
+Altice Dominicana.png
+AmericaNet.png
+AndorraTelecom.png
+Andorre.jfif
+Andrews & Arnold.png
+Angola.png
+Antares.jfif
+Apex Telecom.jfif
+Aquafon.jfif
+ArgonNetworks.png
+ArmenTel.jfif
+Atel.jfif
+Axfone.jfif
+Axialys.jfif
+Azercell.jfif
+Aztelekom.png
+BASE.png
+BPL Mobile.jfif
+BSG.png
+BSNL.png
+BT OnePhone.png
+BaTelCo.png
+Bahamas.png
+BakCell.png
+Barablu.png
+Beeline.jfif
+Bell Aliant.jfif
+Bell BeninBBCOM.jfif
+Bell.png
+Bellsouth Colombia S.A..png
+Bermuda Digital Communications Ltd (BDC).jfif
+Blue Sky.jfif
+BlueWave Communications.png
+Brasil Telecom.png
+Bravo.jfif
+C & W.png
+CCT.png
+CENTENNIAL.jfif
+CEZ Group.png
+CFL.png
+CSTmovel.jfif
+Cable & Wireless..png
+CariGlobe St. Kitts.png
+Casacom.jfif
+Catel.png
+CelTel.png
+Celcom.png
+Cellcom.jfif
+Cellular One.jfif
+Celtiis.jfif
+China Mobile.png
+China Telecom.png
+China Unicom.png
+Chinguittel.png
+Chunghwa Telecom.png
+Cingular Wireless.png
+CityWest Mobility.png
+Claro.jfif
+Claro.png
+Cloud9.jfif
+Compatel Limited.jfif
+Core Communication.jfif
+Core Telecom.jfif
+Datastream (DTSCom).png
+DauphinTelecom.jfif
+Deltronics.png
+Deutsche telekom.png
+Digi Communications.png
+Digicel Bermuda.png
+Digicel Grenada.png
+Digicel.png
+Digitel.jfif
+Drei Austria.jfif
+EMTS limited.jfif
+Eagle Mobile.png
+Entel.png
+Eplus.png
+Esendex.jfif
+Esia.png
+Euroinformation Telecom.png
+Excelcom.png
+FAYN Telecommunications.png
+FITEL.jfif
+FONEX.jfif
+FSM Telecom (FSMTC).png
+FarEasTone.png
+Fastlink.jfif
+Flow.png
+Fractel.png
+Free France.png
+G9 Telecom.png
+GIGSKY Mobile.jfif
+GTA.png
+Gamcel.png
+Gamma Telecom.png
+Getesa.jfif
+Global Telecom.jfif
+GlobalReach.jfif
+Globalstar.png
+Globe Telecom.jfif
+Globecom.png
+GoMobil.jfif
+Golan Telecom.png
+Halotel.jfif
+Hayo.jfif
+HiTs Telecom.jfif
+Hot Mobile.jfif
+Hutch.jfif
+Hutchinson CP Telecommunications.png
+IPEX.png
+IRAQNA.jfif
+Inkk Mobile.png
+Intermatica.png
+Intertelecom.png
+Iraqna1.jfif
+Iristel.png
+Islandcom.jfif
+K-Cell.png
+KG Telecom.png
+KPN.png
+KT (corree sud).jfif
+Kcell-Activ.png
+Korek.png
+Koryolink.png
+Kyivstar.jfif
+LG Uplus.png
+LIME.png
+Lancelot Telecom.jfif
+Laotel.png
+Lebara France Ltd.png
+Liberia Telecom.png
+Libertis S.A..jfif
+Libya Telecom & Technology.png
+Libyana.png
+Limitless.png
+Lleida.net.png
+Logic Communications.png
+M1 (SG).png
+MCI (IR).png
+MEGACOM.png
+MEO.png
+MPT (MM).png
+MTC.png
+MTN.png
+MTS Mobility.jfif
+MTS Turkmenistan.jfif
+Magenta Telekom.png
+Makedonski Telekom (MK).png
+Masmovil (ES).jpg
+Masmovil (ES).png
+Maxis (MY).png
+MessageBird.png
+Metfone (KH).jpg
+Millicom Lao Co Ltd.jfif
+Mint Mobile (États-Unis).jpg
+Mobicom (MN) × 3.jpg
+Mobifone.png
+Mobile FX Services Ltd.jfif
+Mobile8.png
+MobileVirtu (CH).png
+Mobily.png
+Mobitel (SI).png
+Mobitel Pré (LK) logo.png
+Moja Mobile (FI).png
+Moldcell (MD).jpg
+Moldtelecom (MD).png
+Monaco Telecom (MC).png
+Monoprix Mobile (FR).png
+Motiv.png
+Movilnet.jfif
+Movistar.png
+MovistarTelefonica.jfif
+Mtel.png
+Multiregional Transit Telecom (MTT).png
+Mytel (MM).png
+Métro par T-Mobile (États-Unis).png
+NAKA AG (DE).jpg
+NOS.png
+NOWO (PT).png
+NRJ Mobile (FR).png
+NTA (National Telecommunications Authority).jpg
+NTT DoCoMo.png
+Nar Mobile.png
+Nat Nat Bai Holding.png
+Naxtel.png
+Nepal Telecom.jfif
+Neptune Communications.jfif
+Net10 Wireless (États-Unis).png
+NetcomGroup.png
+New World Mobility.png
+Nextel Argentine (AR).png
+O2 UK.png
+O2.png
+OCN Mobile (JP).png
+Odido.jfif
+Oi (TNL PCS Oi).jfif
+Oi.jfif
+Onvoy.jfif
+Ooredoo.png
+Our Telekom.png
+Oxygen8.png
+Ozone.png
+PEOPLEnet.png
+PNCC (Palau National Communications Corporation).png
+PORTO SEGURO TELECOMUNICAÇÔES.png
+POSTE Luxembourg (LU).jpg
+Paktel.jfif
+Palau Telecoms.png
+PalestineCellularCommunications.jfif
+Paradise Mobile.jfif
+Partner.png
+Pivotel Satellite.png
+PosteMobile (IT).png
+Proximus.png
+Pré-MCI (IR).png
+Pré-Mobicom (MN).jpg
+Pré-com Telecom du Népal (NP).jpg
+Public Mobile.png
+Q-Telecom (GR).png
+ROSHAN.png
+Rail Corporation NSW.jfif
+Rakuten Mobile (JP).png
+Redtone (MY).jpg
+Reliance Jio.png
+Robi Axiata.jfif
+Rogers AT&T Wireless.png
+Rogers.jfif
+S-Fone.png
+SAZKA Mobil (CZ).png
+SFR.png
+SK Telecom.png
+STC.png
+SUN NET.jfif
+Sabafon.jfif
+Sainsbury's Mobile (GB).jpg
+Salam.jfif
+SalamSotel.jfif
+Salt.png
+Sask Tel Mobility.png
+SaskTel.jfif
+Sberbank-Telecom.jfif
+Sercomtel.png
+Sierratel.jfif
+Silknet (GE).png
+Simobil (SI).png
+Simplytel (DE).png
+Simsalasim.jfif
+Simyo (ES).png
+SingTel Mobile.png
+Singtel Optus.png
+Smart Communications.jfif
+Smart Telecom.png
+Smartfren (ID).jpg
+Smarty (GB).png
+Smile.jfif
+SoftBank (JP).png
+Solo Mobile (CA).png
+Somalia Telecom (SO).png
+Sonatel.png
+Sosh (FR).png
+Sotel Tchad.png
+Soul Pattinson.png
+Spark.jpg
+Spectranet (NG)logo.png
+Spectrum Mobile (États-Unis).jpg
+Spice Telecom.jfif
+Sprint.png
+Spusu.png
+StarHub Mobile.png
+Stour Marine.png
+Sumamovil Portugal.png
+Sun Cellular.png
+SunCom Wireless Puerto Rico.jfif
+Sunbeach Communications.jfif
+Sunday.png
+Sunrise.png
+Swiftnet.png
+Swisscom.jfif
+Swyp (AE).png
+Syma (FR.png
+Symbio Networks.png
+Syriatel.jfif
+T-Mobile AT.png
+TATA Communications.png
+TDC Net.png
+TELEFONICA.png
+TIM.png
+TM CELL.jfif
+TPG Telecom.jpg
+TTCL.jfif
+TalkTalk.png
+Talkmobile (GB).png
+TashiCell.jfif
+Tata Mobile.png
+Tawali (TD).jpg
+Taïwan Mobile.png
+Tbay Mobility.png
+Team Telecom Armenia.png
+TelAfrica.png
+Telcel.png
+TelcoVillage (DE).png
+Tele2.png
+TeleWare.jfif
+Telecel.png
+Telecom Vanuatu.jpg
+Telecom2.png
+Telecoms Cloud.jfif
+Telekom Brunei Bhd (TelBru).png
+Telemig Cel.jfif
+Telemor.jpg
+Telenet BidCo NV.png
+Telenet.jfif
+Telenor Denmark.png
+Telenor Sweden.jfif
+Telesign.png
+Telesur (SR).png
+Telet Research.png
+Telia Denmark.jfif
+Telikm PNG.png
+TelkomFlexi.png
+Telkomcel.png
+Telna.png
+Telogic.jfif
+Telus Mobility.png
+Telus.png
+Terracom (ex-rwandatel).jfif
+Tesco Mobile CR.png
+Three UK.png
+Thumb Cellular Limited Partnership.jfif
+Tigo.png
+Timor Telecom.jpg
+Tismi BV.png
+Togocel.png
+Tonga Communications Corporation.png
+Total par Verizon (États-Unis).png
+Totalplay (MX).png
+Touch.png
+Tracfone (États-Unis).png
+TransAsia.png
+TravelSIM.png
+Tre Sverige.jfif
+TriMob.jfif
+Tricom.jfif
+True Move.jfif
+Truphone.jfif
+Tunisie Télécom.jfif
+Turk Telekom Pre (TR).jpg
+Turkcell.png
+TuvaluTelecom.png
+Twilio Ireland Limited.png
+Télécom national (MH).png
+Türk Telekom.png
+U Mobile (MY).png
+UPC Polska.png
+UQ Mobile (JP).jpg
+Ucell.jpg
+Ucom.jfif
+Ufone (PK).png
+Unefon (MX).png
+Unitel.png
+UzMobile (UZ).png
+VOXBONE SA.png
+VTR.png
+Vainakh Telecom CJSC.png
+Vectone Mobile.png
+Velcom telecom.png
+Verizon Wireless.png
+Vidéotron.png
+Vietnamobile.jfif
+Viettel Mobile.png
+Vikings mobiles (BE).png
+Vinaphone.png
+Vini (PF).png
+Virgin Mobile USA (MVNO).png
+Virgin Mobile.png
+Visafone limited.png
+Viva.png
+Vivacell.png
+Vodafone Spain.png
+Vodafone-Lycamobile.png
+VodafoneZiggo.png
+Voicetec.png
+Voxi (GB).png
+WBS-Mobile.png
+WOM Chili (CL).jfif
+WOM Colombie (CO).png
+Wafa Telecom.png
+WanTok.jfif
+Watany Ettisalat.jfif
+Wave Mobile.png
+Wavecrest.jfif
+Weblinks Limited.jfif
+WindTre.png
+Wireless Logic.jfif
+Woolworths Mobile (Australie).png
+XL Axiata (ID).png
+XPress.jfif
+Xfinity Mobile (États-Unis).jfif
+Y!mobile (JP).jfif
+YemenMobile.jfif
+Yettel (HU).png
+Yim Siam.jfif
+Yoigo.png
+Yota (RU).png
+Youfone (NL).png
+ZAMTEL.png
+Zain.png
+Zong (PK).png
+access.png
+afghan-telecom.jfif
+africell.png
+airsom.png
+airtel.png
+ais.jfif
+alfa.png
+aliv.png
+alphatelecomturk.png
+amtel.png
+antel.png
+apua.png
+areeba.jfif
+asiacell.png
+at.png
+att.png
+awcc.png
+axis.png
+azur.jfif
+babilon.png
+banglalink.jfif
+bhtelecom.png
+bhutantelecom.jfif
+blueline.png
+bmobile.png
+bouy.png
+bouygues.png
+camtel.jfif
+camtel.png
+cell c.png
+cellc.png
+chinamobile.png
+chinaunicom.png
+cnt.jfif
+comium.jfif
+comores.png
+comtel.jfif
+congotelecom.jfif
+connect.png
+cosmote.jfif
+cst.png
+cvmovel.png
+cvtelecom.jfif
+cyta.jfif
+dhiraagu.jfif
+dialog.png
+dito.png
+djezzy.png
+djibouti.png
+docomo.png
+dtac.png
+easyworld.jfif
+easyworld.png
+econet.png
+ed Bull Mobile.png
+elisa.png
+emtel.png
+eritel.jfif
+eritel.png
+ethio telecom.jfif
+ethio.jfif
+etisalat.png
+evatis.jfif
+expresso.png
+gamtel.jfif
+glo.jfif
+globe.png
+gmobile.png
+golis.png
+grameen.png
+grameenphone.png
+guinetel.png
+ha-vel internet.png
+hormuud.png
+hot.jfif
+ice.png
+indochina.png
+indosat.png
+intelvision.png
+intercel.jfif
+inwi.png
+iptel.jfif
+jawwal.jfif
+jazz.jfif
+jio.png
+kt.png
+ktrn.png
+kyivstar.png
+lgu.jfif
+libercom.jfif
+lifecell.png
+limitel.png
+liquid.jfif
+liquidintelligenttech.jfif
+lmt.png
+lonestar.png
+lycamobile.png
+m1.png
+mafab.jfif
+magti.png
+mahagar.png
+maroctelecom.png
+mascom.png
+mattel.png
+mattel1.png
+mauritel.jfif
+maxis.png
+mcel.png
+mci.png
+meteor.png
+mobicom.png
+mobilis.png
+mobitel.png
+moov.png
+movicel.png
+movitel.png
+mtml.png
+mts.jfif
+muni.png
+nationlink.jfif
+netone.jfif
+nexttel.jfif
+nigertelecom.png
+nordnet.png
+novafone.png
+ntel.jfif
+onatel.png
+one NZ.jpg
+one.jfif
+onet.jfif
+ooredoo Indosat.png
+optus.png
+orange.png
+outremertelecom.png
+pelephone.png
+pepephone.png
+planor.png
+play.png
+promobile.png
+qcell.jfif
+rain.jfif
+rogers.png
+safaricom.png
+selam.png
+siminn.jfif
+simple mobile.png
+singtel.png
+smartfren.png
+smartmobile.jfif
+softbank.png
+somtel.jfif
+sotelgui.png
+sotelma.jfif
+startcom.jfif
+sudatel.jfif
+sun.jfif
+tahitiphone.jfif
+tcell.jfif
+telecel.jfif
+telecomnamibie.jfif
+telekom.png
+telenor.jfif
+telesom.png
+telesur.png
+teletalk.png
+telkom.jfif
+telkom.png
+telkomsel.jfif
+telma.jfif
+telmob.jfif
+telstra.png
+tmais.png
+tmobile.png
+tnmobile.jfif
+togotelecom.jfif
+true.png
+turktelekom.png
+téléchargement.jfif
+ucell.png
+umniah.png
+umobile.png
+uzmobile.png
+verizon.jfif
+vietnamobile.png
+virgin.jfif
+vodacom.jfif
+vodacom.png
+vodafone.png
+vodafore.jfif
+warid.png
+wataniya.png
+wbs.png
+we.png
+winSIM (DE).png
+yas.png
+yoomee.png
+zamani.jfif
+zong.png

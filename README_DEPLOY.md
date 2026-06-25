@@ -39,3 +39,29 @@ Le workflow utilise l’action `SamKirkland/FTP-Deploy-Action` pour envoyer tous
 - Le dossier `.github/` n’est pas envoyé sur le serveur.
 - Le workflow supprime (`--delete`) les fichiers distants qui n’existent plus localement.
 - Vérifiez que `public/.htaccess` et le `.htaccess` racine sont bien présents avant de pousser.
+
+## Si vous uploadz tout le dossier `smartcontacts`
+
+Si vous mettez le dossier `smartcontacts` dans `htdocs`, votre site sera accessible à :
+
+- `https://votresite.infinityfreeapp.com/smartcontacts/`
+
+### Ce qu’il faut modifier
+
+1. Dans `app/Config/config.php`, mettez :
+
+```php
+'app' => [
+    'url' => 'https://votresite.infinityfreeapp.com/smartcontacts'
+],
+```
+
+2. Si vous utilisez des routes ou des liens qui pointent vers `/`, sachez que l’URL de base est maintenant `/smartcontacts/`.
+
+3. Votre dossier `htdocs` sur le serveur doit contenir exactement :
+   - `smartcontacts/`
+   - pas d’autres fichiers au même niveau si vous voulez garder cette structure
+
+### Si vous voulez accéder au site sans `/smartcontacts`
+
+Il faut alors uploader le contenu du dossier `smartcontacts` directement dans `htdocs` (et non pas le dossier lui-même).

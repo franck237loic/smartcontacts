@@ -1,8 +1,8 @@
 # Enable Rewrite Engine
 RewriteEngine On
 
-# Set the base directory
-RewriteBase /smartcontacts/public/
+# Set the base directory to the application root
+RewriteBase /
 
 # Redirect all requests to index.php
 RewriteCond %{REQUEST_FILENAME} !-f

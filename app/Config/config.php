@@ -27,7 +27,7 @@ return [
         'debug' => getenv('APP_ENV') === 'development',
         'timezone' => 'Europe/Paris',
         'locale' => 'fr_FR',
-        'url' => getenv('APP_URL') ?: 'http://localhost/smartcontacts'
+        'url' => getenv('APP_URL') ?: 'https://smartcontacts.free.nf/smartcontacts'
     ],
 
     // API Configuration
